@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sung Jinwoo</title>
+    <style>
+        h1{
+            background-color: #333;
+            text-align: center;
+            font-family:Verdana, Tahoma, sans-serif;
+            color: greenyellow;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+        }
+
+        .container-1 {
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: black;
+        }
+
+        .row1 {
+            background-color: #333;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .row1 h1 {
+            font-size: 2rem;
+        }
+
+        .row1 ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px;
+            gap: 20px;
+        }
+
+        .row1 li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .row1 li:hover {
+            background-color: rgba(255, 33, 218, 0.199);
+            padding: 10px;
+        }
+
+        /* Top navigation bar */
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            border-bottom: 3px solid transparent;
+        }
+
+        .topnav a:hover {
+            border-bottom: 3px solid red;
+        }
+
+        .topnav a.active {
+            border-bottom: 3px solid red;
+        }
+
+        .parent-container2 {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 620px) {
+            .parent-container2 {
+                flex-direction: row;
+            }
+        }
+
+        .row2 {
+            flex: 3;
+            background-color: #333;
+            background-size: cover;
+            padding: 20px;
+            border: 5px solid white;
+            font-size: medium;
+            font-style: italic;
+            color: white;
+        }
+
+        .row3 {
+            flex: 1;
+            background-color:#333;
+            padding: 20px;
+            border: 5px solid white;
+            font-size: medium;
+            font-style: italic;
+            color: white;
+        }
+
+        .row3 ul {
+            list-style: none;   
+        }
+
+        .row3 ul li {
+            padding: 10px 0;
+        }
+
+        /* Flex container for image and links */
+        .parent-container3 {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+           background-color:yellowgreen;
+            background-size: cover;
+            border: 10px solid white;
+            margin-bottom: 10px;
+        }
+
+        .row4 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .row4 img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(31, 66, 165);
+            margin-top: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media only screen and (max-width: 620px) {
+            .row1 h1 {
+                font-size: 1.5rem;
+            }
+
+            .parent-container2 {
+                flex-direction: column;
+            }
+
+            .row2,
+            .row3 {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .parent-container3 {
+                flex-direction: column;
+            }
+
+            .row4 {
+                flex-direction: column;
+            }
+        }
+        .topnav a:hover{
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+<h1>HADES3SCHOOL.COM</h1>
+    <div class="topnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="parent-container2">
+        <div class="row2">
+            <ul>
+                <li>Main Content</li>
+                <li>Sung Jinwoo (성진우, Seong Jin-Wu) is the main protagonist of Solo Leveling. He is the strongest hunter in the world and the second Shadow Monarch, having inherited the position from his predecessor Ashborn.</li>
+            </ul>
+        </div>
+
+        <div class="row3">
+            <ul>
+                <li>ITEM</li>
+                <li>1. Kasaka's Venom Fang</li>
+                <li>2. Knight Killer</li>
+                <li>3. Baruka's Dagger</li>
+                <li>4. Demon King's Daggers</li>
+                <li>5. Demon King's Longsword</li>
+                <li>6. Kamish's Wrath</li>
+                <li>7. Antares' Fangs</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="parent-container3">
+        <div class="row4">
+            <img src="https://media1.giphy.com/media/7SCF2jgLoQRvG/source.gif" alt="giphy">
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2024 My Website</p>
+    </footer>
+
+</body>
+
+</html>

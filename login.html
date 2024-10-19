@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN FORM </title>
+    <style>
+        .parent-container {
+            background-color: rgb(197, 184, 184);
+            width: 300px;
+            display:flex;
+            flex-direction: column;
+            padding: 50px;
+            margin: 50px auto;
+            border-radius: 50px;
+        }
+        .sub-container1,
+        .sub-container2{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 10px;   
+            color: rgb(255, 248, 225);
+            font-size: large;
+            font: bold;
+        }
+        .sub-container1 input,
+        .sub-container2 input{
+            height: 30px;
+            border-radius: 5px;
+        }
+        .btn-login{
+            margin: 10px;
+            background-color: rgb(85, 63, 63);
+            border-color: rgb(218, 193, 174);
+            color:rgb(216, 216, 216);
+            padding: 5px;
+            font-size: large;
+            font: bold; 
+        }
+        h2{
+            text-align: center;
+            margin: 10px;
+            color: rgb(78, 78, 78);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-container">
+        <h2>LOG IN</h2>
+        <div class="sub-container1">
+            <label>Username</label>
+            <input type="text">
+        </div>
+        <div class="sub-container2">
+            <label>Password</label>
+            <input type="Password">
+        </div>
+            <button class="btn-login">LOG-IN</button>
+</body>
+
+</html>
