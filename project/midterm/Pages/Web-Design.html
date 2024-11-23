@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            padding: 10px;
+        }
+        header{
+            background-color: peachpuff;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        header h1 {
+            background-color: antiquewhite;
+            padding: 10px;
+            text-align:left;
+            justify-content: left;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: peachpuff;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav li {
+            padding: 5px;
+        }
+        nav li:hover {
+            background-color: #f0a500;
+            border-radius: 5px;
+        }
+        .button-box {
+            background-color: peachpuff;
+            font-weight: bold;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .button-box:hover {
+            background-color: #f0a500;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .main-image {
+            background-image: url(../,/body_image.jpg);
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            position: relative;
+        }
+        #overlay {
+            background-color: #ffffff80;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 50%;
+        }
+        .main-image h2, .main-image p, .main-image button {
+            position: relative;
+            z-index: 1;
+        }
+        .button-container {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            margin:20px;
+            grid-template-columns: repeat(3,1fr);
+        }
+        b{
+            background-color: peachpuff;
+            padding:10px;
+            margin: 5px;
+            color: black;
+        }
+        b:hover{
+            background-color: #f0a500;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Web Design</h1>
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-image">
+        <div id="overlay"></div>
+        <h2>Welcome to My Website</h2>
+        <p>This is some text over the image.</p>
+        <b>Explore More</b>
+    </div>
+
+    <section class="content" id="explore">
+        <div class="button-container">
+            <div class="button-box">MORE INFO</div>
+            <div class="button-box">MORE INFO</div>
+            <div class="button-box">MORE INFO</div>
+            <div class="button-box">MORE INFO</div>
+            <div class="button-box">MORE INFO</div>
+            <div class="button-box">MORE INFO</div>
+            <div class="button-box">MORE INFO</div>
+            <div class="button-box">MORE INFO</div>
+            <div class="button-box">MORE INFO</div>
+            <div class="button-box">MORE INFO</div>
+            <div class="button-box">MORE INFO</div>
+            <div class="button-box">MORE INFO</div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2024 My Website</p>
+    </footer>
+</body>
+</html>
